@@ -1,1 +1,29 @@
+package javaapplication2;
+import java.util.Scanner;
+public class JavaApplication2 {
 
+    public static void main(String[] args) {
+    Scanner JS = new Scanner(System.in);
+        System.out.println("first number");
+        int h = JS.nextInt();
+        JS.nextLine();
+        System.out.println("second number");
+        int t = JS.nextInt();
+        JS.nextLine();
+        System.out.println("operation");
+        String php = JS.nextLine();
+        if (php.equalsIgnoreCase("more")) {
+            System.out.println("h + t");
+        }
+        else if (php.equals("lost") ) {
+            System.out.println(h - t);
+        }
+         else if (php.equals("morebutbetter") ) {
+            System.out.println(h * t);
+         }
+         else if (php.equals("dividir") ) {
+            System.out.println(h / t); 
+         }
+    }
+    
+}
